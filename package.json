@@ -1,10 +1,10 @@
 {
   "name": "@ilb/ajvinstance",
-  "version": "3.0.4",
+  "version": "3.1.0",
   "description": "",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,8 @@
     "ajv-keywords": "^5.1.0",
     "uniforms-bridge-json-schema": "^3.10.0-rc.1",
     "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
   }
 }

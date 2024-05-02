@@ -12,8 +12,10 @@ import vehicleNumber from './keywords/vehicleNumber.js';
 import minDate from './keywords/minDate.js';
 import maxDate from './keywords/maxDate.js';
 import bodyNumber from './keywords/bodyNumber.js';
+import rule from "./keywords/rule.js";
 
 export default (ajv) => {
+  /** !!!DEPRECATED!!! Новые правила, не требующие параметров, добавлять в rules (src/keywords/rules) **/
   ajv.addKeyword('isNotEmpty', isNotEmpty);
   ajv.addKeyword('maskedNumberLength', maskedNumberLength);
   ajv.addKeyword('maskedNumberLengthStrict', maskedNumberLengthStrict);
@@ -28,6 +30,7 @@ export default (ajv) => {
   ajv.addKeyword('minDate', minDate);
   ajv.addKeyword('maxDate', maxDate);
   ajv.addKeyword('bodyNumber', bodyNumber);
+  ajv.addKeyword('rule', rule);
 
   return ajv;
 };

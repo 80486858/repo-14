@@ -1,3 +1,5 @@
+import validator from "./rules/bodyNumber.js";
+
 const bodyNumber = {
   type: 'string',
   errors: true,
@@ -5,12 +7,12 @@ const bodyNumber = {
     validate.errors = [
       {
         keyword: 'bodyNumber',
-        message: 'Номер кузова должен быть длинной 9-12 символов и содержать только цифры и латиницу',
+        message: validator.errorMessage(),
         params: { keyword: 'bodyNumber' },
       },
     ];
 
-    return /^([0-9A-Z]{9,12})?$/.test(data);
+    return !data || validator.condition(data);
   },
 }
 

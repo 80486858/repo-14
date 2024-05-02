@@ -1,3 +1,5 @@
+import validator from "./rules/latin.js";
+
 const latin = {
   type: 'string',
   errors: true,
@@ -5,12 +7,12 @@ const latin = {
     validate.errors = [
       {
         keyword: 'latin',
-        message: 'Для ввода доступна только латиница.',
+        message: validator.errorMessage(),
         params: { keyword: 'latin' },
       },
     ];
 
-    return !data || /^[0-9a-z.,:!?()";_/\\'\-\s]+$/i.test(data); // латиница, цифры и знаки препинания
+    return !data || validator.condition(data);
   },
 }
 

@@ -1,3 +1,5 @@
+import validator from "./rules/vehicleNumber.js";
+
 const vehicleNumber = {
   type: 'string',
   errors: true,
@@ -5,12 +7,12 @@ const vehicleNumber = {
     validate.errors = [
       {
         keyword: 'vehicleNumber',
-        message: 'VIN должен быть длинной 17 символов и содержать только 0-9 и A,B,C,D,E,F,G,H,J,K,L,M,N,P,R,S,T,U,V,W,X,Y,Z',
+        message: validator.errorMessage(),
         params: { keyword: 'vehicleNumber' },
       },
     ];
 
-    return /^([0-9ABCDEFGHJKLMNPRSTUVWXYZ]{17})?$/.test(data);
+    return !data || validator.condition(data);
   },
 }
 

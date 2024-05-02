@@ -1,3 +1,5 @@
+import validator from "./rules/cyrillic.js";
+
 const cyrillic = {
   type: 'string',
   errors: true,
@@ -5,11 +7,11 @@ const cyrillic = {
     validate.errors = [
       {
         keyword: 'cyrillic',
-        message: 'Для ввода доступна только кириллица.',
+        message: validator.errorMessage(),
         params: { keyword: 'cyrillic' },
       },
     ];
-    return !data || /^[0-9а-яё.,:!?()";_/\\'\-\s]+$/i.test(data); // кириллица, цифры и знаки препинания
+    return !data || validator.condition(data);
   },
 }
 
