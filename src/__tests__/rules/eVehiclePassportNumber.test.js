@@ -17,6 +17,13 @@ describe('Тесты валидатора номера ПТС', () => {
     expect(isValid).toBe(true);
   });
 
+  it('Должен вернуть false, если номер ПТС длиннее 15 символов', () => {
+    const validVin = '1234567897894561111';
+    const isValid = eVehiclePassportNumber.condition(validVin);
+
+    expect(isValid).toBe(false);
+  });
+
   it('Должен вернуть false, если номер ЭПТС содержит буквы', () => {
     const vinWithCyrillic = '77TM181468'; // номер ПТС содержит символы латиницы
     const isValid = eVehiclePassportNumber.condition(vinWithCyrillic);
