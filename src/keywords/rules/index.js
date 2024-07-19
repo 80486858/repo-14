@@ -7,6 +7,8 @@ import cyrillic from "./cyrillic.js";
 import latin from "./latin.js";
 import snils from "./snils.js";
 import vehicleNumber from "./vehicleNumber.js";
+import vehiclePassportNumber from "./vehiclePassportNumber.js";
+import eVehiclePassportNumber from "./eVehiclePassportNumber.js";
 
 export default {
   inn,
@@ -18,4 +20,6 @@ export default {
   latin,
   snils,
   vehicleNumber,
+  vehiclePassportNumber,
+  eVehiclePassportNumber,
 }
