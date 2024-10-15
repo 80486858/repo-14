@@ -4205,9 +4205,9 @@ levn@^0.4.1:
     type-check "~0.4.0"
 
 license-checker-rseidelsohn@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/license-checker-rseidelsohn/-/license-checker-rseidelsohn-4.3.0.tgz#4f72292c529d5ca432154d6737d83f8f6d25a444"
-  integrity sha512-A2LQ+3kUIG1hCJ/hh4WUvPsyhooT7o5mFhNyTean0cqH3rZeB1ZUCthxlcdgWESSqx+3DLC6J/8ghbiWRYKdUA==
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/license-checker-rseidelsohn/-/license-checker-rseidelsohn-4.4.2.tgz#c8136cd5708ef68e5560445bd171cc4a5dc536df"
+  integrity sha512-Sf8WaJhd2vELvCne+frS9AXqnY/vv591s2/nZcJDwTnoNgltG4mAmoenffVb8L2YPRYbxARLyrHJBC38AVfpuA==
   dependencies:
     chalk "4.1.2"
     debug "^4.3.4"
