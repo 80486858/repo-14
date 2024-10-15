@@ -1,5 +1,5 @@
 # Create image from node v16
-FROM node:21
+FROM node:22
 
 # Install pnpm
 RUN npm i -g pnpm
