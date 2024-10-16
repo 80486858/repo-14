@@ -1128,7 +1128,7 @@ jobs:
       uses: actions/checkout@v2
     - continue-on-error: true
       name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v1
+      uses: aws-actions/configure-aws-credentials@v4
       with:
         aws-region: ${{ secrets.AWS_STAGE_REGION }}
         role-duration-seconds: 900
@@ -1408,7 +1408,7 @@ jobs:
       uses: actions/checkout@v2
     - continue-on-error: true
       name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v1
+      uses: aws-actions/configure-aws-credentials@v4
       with:
         aws-region: ${{ secrets.AWS_STAGE_REGION }}
         role-duration-seconds: 900
