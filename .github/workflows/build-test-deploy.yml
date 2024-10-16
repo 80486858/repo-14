@@ -541,7 +541,7 @@ jobs:
         username: ${{ github.repository_owner }}
     - continue-on-error: true
       name: Cache build
-      uses: Swatinem/rust-cache@v1
+      uses: Swatinem/rust-cache@v2
       with:
         key: ${{ matrix.platform }}-cache-v1
     - continue-on-error: true
