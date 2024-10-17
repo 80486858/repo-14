@@ -152,7 +152,7 @@
   },
   "devDependencies": {
     "@ant-design/bisheng-plugin": "^2.3.0",
-    "@ant-design/colors": "^4.0.0",
+    "@ant-design/colors": "^7.1.0",
     "@ant-design/hitu": "^0.0.0-alpha.13",
     "@ant-design/tools": "^10.0.1",
     "@qixian.cs/github-contributors-list": "^1.0.3",
