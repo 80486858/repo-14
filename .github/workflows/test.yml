@@ -247,7 +247,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v2
     - continue-on-error: true
-      uses: cachix/install-nix-action@v12
+      uses: cachix/install-nix-action@v30
     - continue-on-error: true
       run: nix-build -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/master.tar.gz
     - name: after
